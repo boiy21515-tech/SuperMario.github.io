@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0, 27, 48);
+    font-family: 'Oswald', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: inline-block; 
+}
+
+.whie-block {
+    background-color: #fff;
+    min-height: 98vh;
+    width: 100%;
+    max-width: 700px; 
+    border-radius: 16px; 
+    padding: 30px;
+    margin: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logotip {
+    margin-bottom: auto; 
+    width: 100%;
+}
+
+.logo-img {
+    width: 30px; 
+    height: auto;
+    display: block;
+    margin-bottom: 40px;
+}
+
+
+.text1 {
+    font-size: clamp(80px, 5vw, 50px);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: rgb(0, 31, 89);
+    margin-bottom: 15px;
+    line-height: 1.2;
+    width: 550px;
+}
+
+.simvol {
+    color: rgb(0, 102, 255);
+}
+
+.opisanie {
+    font-weight: 250;
+    font-size: 18px;
+    color: rgba(57, 57, 57, 0.806);
+    margin-bottom: 40px; 
+    transition: color 0.3s ease;
+}
+
+.opisanie:hover {
+    color: rgb(41, 41, 41);
+}
+
+.buttons-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.btn, .btn2 {
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 300;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background: rgb(49, 110, 224);
+}
+
+.btn:hover {
+    background: rgb(35, 90, 195);
+    box-shadow: 0 4px 12px rgba(49, 110, 224, 0.3);
+}
+
+.btn2 {
+    background: rgba(0, 145, 255, 0.15); 
+    color: rgb(0, 119, 255); 
+    border: 1px solid rgba(0, 145, 255, 0.3);
+}
+
+.btn2:hover {
+    background: rgba(0, 145, 255, 0.25);
+}
+
+.mmm {
+    color: rgb(0, 119, 255); 
+}
+
+.btn:active, .btn2:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.photo-block {
+    width:55%;
+    min-height: 98vh;
+    background: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+}
+.rabotnik {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+
+}
+.number-inf {
+    position: relative;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    background: url("/img/ndvlfXsG.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    border-radius:16px 16px 0 0;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pht-rabot {
+    margin-top: auto;
+}
+
+
+.button-info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.plus {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 50px;
+    backdrop-filter: blur(7px);
+    cursor: default;
+    border: 0.7px solid rgb(255, 255, 255, 0.3);
+    transition: 0.3s;
+    font-size: 10px;
+}
+.plus:hover {
+    transform:translateY(3px);
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+        background: rgb(0, 18, 32);
+    }
+
+    .whie-block {
+        max-width: 100%;
+        min-height: auto;
+        padding: 20px;
+        margin: 0 0 15px 0;
+        border-radius: 24px;
+    }
+
+    .logo-img {
+        margin-bottom: 25px;
+    }
+
+    .text1 {
+        font-size: 38px;
+        width: 100%;
+        line-height: 1.1;
+        margin-bottom: 12px;
+    }
+
+    .opisanie {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .buttons-container {
+        gap: 10px;
+    }
+
+    .btn, .btn2 {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+    .photo-block {
+        width: 100%;
+        min-height: auto;
+        background: transparent;
+        border-radius: 24px;
+    }
+
+    .pht-rabot {
+        order: 1;
+        margin-top: 0;
+        margin-bottom: -5px;
+        background: #fff;
+        border-radius: 0 0 24px 24px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rabotnik {
+        width: 90%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .number-inf {
+        order: 2;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        border-radius: 24px 24px 0 0;
+        padding: 20px;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+    .button-info {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .plus {
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+}
